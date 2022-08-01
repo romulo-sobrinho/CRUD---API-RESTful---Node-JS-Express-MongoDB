@@ -7,15 +7,15 @@
 <h1 align="center">CRUD - API RESTful</h1>
 <br>
 
-<p align="center">Projeto de construção de API RESTful/p>
+<p align="center">Projeto de construção de API RESTful</p>
 
 
-## Objetivo
+<h2 align="center">Objetivo</h2>
 <p align="center">
   Criar uma API RESTful utilizando Node JS, Express, MongoDB, numa arquitetura MVC, onde a estrutura das coleções do banco de dados estão na Model, a lógica do CRUD está no Controllers, bem como rotas para cada verbo HTTP</p>
 
 
-## Features
+<h2 align="center">Features</h2>
 
   #### Base de dados
     ✔️ Criar conexão com banco de dados (Mongoose)
@@ -32,7 +32,7 @@
     ✔️ Utilização de callbacks nas requisições da API
     ✔️ Utilização de destructuring para receber dados JSON na API
 
-## Preview
+<h2 align="center">Preview</h2>
 <div align="center"> 
   <h3>Divisão dos arquivos do projeto</h3>
   ![DivisãoPastasProjeto](https://user-images.githubusercontent.com/68918326/182261659-bb6e2823-c1c9-4118-8db8-e060619fdf8a.PNG)

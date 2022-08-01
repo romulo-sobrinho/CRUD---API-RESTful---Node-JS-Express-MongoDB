@@ -33,12 +33,12 @@
     ✔️ Utilização de destructuring para receber dados JSON na API
 
 <h2 align="center">Preview</h2>
-<div align="center"> 
-  <h3>Divisão dos arquivos do projeto</h3>
+  <h3 align="center">Divisão dos arquivos do projeto</h3>
   ![DivisãoPastasProjeto](https://user-images.githubusercontent.com/68918326/182261659-bb6e2823-c1c9-4118-8db8-e060619fdf8a.PNG)
   <br>
-  <h3>Realizando inserção de dados (CREATE) com Postman</h3>
-</div>
+  <h3 align="center">Realizando inserção de dados (CREATE) com Postman - Método POST</h3>
+  ![API RESTFUL - CREATE2](https://user-images.githubusercontent.com/68918326/182262710-9cc92a5d-eecd-405d-be59-85869923ce09.gif)
+
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÃO🎖️</h3>

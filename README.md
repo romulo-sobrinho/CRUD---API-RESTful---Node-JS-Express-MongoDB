@@ -1,4 +1,5 @@
 ![API](https://user-images.githubusercontent.com/68918326/182261081-bdc4c776-5522-4705-ae00-872a435a9409.PNG)
+![API RESTFUL - CREATE2](https://user-images.githubusercontent.com/68918326/182262710-9cc92a5d-eecd-405d-be59-85869923ce09.gif)
 
 <hr>
 <h3 align="center">🎖️PROJETO EM CONSTRUÇÃO🎖️</h3>

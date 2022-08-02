@@ -35,13 +35,18 @@ const addDog = async (req, res) => {
     return
   }
 
+  if(await Dog.findOne({breed})) {
+    res.status(422).json({message: 'Dog não pode ser cadastrado, já existe essa raça'})
+    return
+  }
+
   const dog = {
     breed, lifeExpectancy, weight, levelCute
   }
   
   try {
     await Dog.create(dog)
-    res.status(201).json({message: 'Dog criado com sucesso!'})
+    res.status(201).json({message: 'Dog cadastrado com sucesso!'})
   } catch (error) {
     res.status(500).json({error: error})
   }

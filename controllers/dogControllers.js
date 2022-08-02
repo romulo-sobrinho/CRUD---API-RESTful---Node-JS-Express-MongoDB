@@ -1,8 +1,40 @@
 const Dog = require('../model/Dog')
 
+
+const showDogs = async (req, res) => {
+  try{
+    const dogs = await Dog.find()
+    res.status(200).json(dogs)
+  }catch(error) {
+    res.status(500).json({message: error})
+  }
+}
+
+const showSpecificDog = async (req, res) => {
+  const breed = req.params.breed
+
+  try{
+    const dog = await Dog.findOne({breed})
+
+    if(!dog) {
+      res.status(422).json({message: "Dog não encontrado"})
+      return
+    }
+
+    res.status(200).json(dog)
+  }catch(error) {
+    res.status(500).json({message: error})
+  }
+}
+
 const addDog = async (req, res) => {
-  let {breed, lifeExpectancy, weight, levelCute} = req.body
+  const {breed, lifeExpectancy, weight, levelCute} = req.body
   
+  if(!breed || !lifeExpectancy || !weight || !levelCute) {
+    res.status(422).json({message: 'Os dados breed, life expectancy, weight, levelCute são obrigatórios!'})
+    return
+  }
+
   const dog = {
     breed, lifeExpectancy, weight, levelCute
   }
@@ -15,15 +47,11 @@ const addDog = async (req, res) => {
   }
 }
 
-module.exports = {addDog}
+module.exports = {showDogs, showSpecificDog, addDog}
 
 
 
 
-// const showDogs = (req, res) => {
-  //   console.log("Método GET funcionando")
-//   res.json(dogs.showDogs())
-// }
 
 // const updateDog = (req, res) => {
   //   let {id, breed, life, weight, levelCute} = req.body

@@ -25,10 +25,12 @@
   #### Node JS / Express
     ✔️ Criar servidor HTTP
     ✔️ Criar rotas específicas para cada verbo HTTP (GET, POST, PUT, PATCH, DELETE)
-    ✔️ Fazer conexão entre as estruturas MVC
+    ✔️ Uso correto dos status HTTP nas requisições
+    ✔️ Fazer conexão entre as estruturas MVC (Model, View e Controller)
 
   #### Conhecimentos técnicos em javascript
     ✔️ Utilização de promises para conexão com a base de dados
+    ✔️ Utilização correta de async await na comunicação com o banco de dados durante as requisições
     ✔️ Utilização de callbacks nas requisições da API
     ✔️ Utilização de destructuring para receber dados JSON na API
 
@@ -41,6 +43,12 @@
 <h3 align="center">Realizando inserção de dados (CREATE) com Postman - Método POST</h3>
 
 ![API RESTFUL - CREATE2](https://user-images.githubusercontent.com/68918326/182262710-9cc92a5d-eecd-405d-be59-85869923ce09.gif)
+
+
+<br>
+<h3 align="center">Realizando a busca de dados (READ) com Postman - Método GET</h3>
+
+![API RESTFUL - READ](https://user-images.githubusercontent.com/68918326/182366416-98018c4b-e479-468a-9dad-dfbb43b08005.gif)
 
 
 

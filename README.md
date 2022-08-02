@@ -17,7 +17,7 @@
 
 <h2 align="center">Features</h2>
 
-  #### Base de dados
+  #### Base de dados - Mongo DB
     ✔️ Criar conexão com banco de dados (Mongoose)
     ✔️ Criar coleção no banco de dados
     ✔️ Inserir, pesquisar, atualizar e deletar documentos na base de dados

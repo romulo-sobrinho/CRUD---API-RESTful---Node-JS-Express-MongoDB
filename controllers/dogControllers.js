@@ -17,13 +17,13 @@ const showSpecificDog = async (req, res) => {
     const dog = await Dog.findOne({breed})
 
     if(!dog) {
-      res.status(422).json({message: "Dog não encontrado"})
+      res.status(422).json({message: 'Dog não encontrado'})
       return
     }
 
     res.status(200).json(dog)
   }catch(error) {
-    res.status(500).json({message: error})
+    res.status(500).json({message: 'Lista de dogs não localizada', error: error})
   }
 }
 
@@ -48,24 +48,32 @@ const addDog = async (req, res) => {
     await Dog.create(dog)
     res.status(201).json({message: 'Dog cadastrado com sucesso!'})
   } catch (error) {
-    res.status(500).json({error: error})
+    res.status(500).json({message: 'Dog não cadastrado', error: error})
   }
 }
 
-module.exports = {showDogs, showSpecificDog, addDog}
+const updateDog = async (req, res) => {
+  const breed = req.params.breed
+  const {lifeExpectancy, weight, levelCute} = req.body
+  try {
+    const updateDog = await Dog.updateOne({breed}, {lifeExpectancy, weight, levelCute})
+    if(updateDog.matchedCount === 0) {
+      res.status(422).json({message: 'Dog não encontrado'})
+      return
+    }
+    res.status(200).json({message: 'Dog atualizado com sucesso!'})
+  } catch (error) {
+    res.status(500).json({message: 'Dog não atualizado'})
+  }
+}
+
+module.exports = {showDogs, showSpecificDog, addDog, updateDog}
 
 
 
 
 
-// const updateDog = (req, res) => {
-  //   let {id, breed, life, weight, levelCute} = req.body
 
-//   dogs.updateDog(id, breed, life, weight, levelCute)
-
-//   console.log("Método PUT funcionando")
-//   res.send("Doguinho atualizado")
-// }
 
 // const deleteDog = (req, res) => {
 //   let {id} = req.body

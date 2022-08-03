@@ -1,6 +1,5 @@
 const express = require('express')
 const router = express.Router()
-const bodyParser = require('body-parser')
 const dogsControllers = require('../controllers/dogControllers')
 
 
@@ -8,7 +7,9 @@ router.get("/", dogsControllers.showDogs)
 
 router.get("/:breed", dogsControllers.showSpecificDog)
 
-router.post("/", bodyParser.json(), dogsControllers.addDog)
+router.post("/", dogsControllers.addDog)
+
+router.patch("/:breed", dogsControllers.updateDog)
 
 module.exports = router
 

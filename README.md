@@ -1,7 +1,7 @@
 ![API](https://user-images.githubusercontent.com/68918326/182261081-bdc4c776-5522-4705-ae00-872a435a9409.PNG)
 
 <hr>
-<h3 align="center">🎖️PROJETO EM CONSTRUÇÃO🎖️</h3>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
 <hr>
 
 <h1 align="center">CRUD - API RESTful</h1>
@@ -33,6 +33,12 @@
     ✔️ Utilização correta de async await na comunicação com o banco de dados durante as requisições
     ✔️ Utilização de callbacks nas requisições da API
     ✔️ Utilização de destructuring para receber dados JSON na API
+ 
+  #### CRUD
+    ✔️ CREATE
+    ✔️ READ
+    ✔️ UPDATE
+    ✔️ DELETE
 
 <h2 align="center">Preview</h2>
 <h3 align="center">Divisão dos arquivos do projeto</h3>
@@ -53,5 +59,5 @@
 
 
 <hr>
-<h3 align="center">🎖️PROJETO EM CONSTRUÇÃO🎖️</h3>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
 <hr>

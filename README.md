@@ -45,6 +45,13 @@
 
 ![DivisãoPastasProjeto](https://user-images.githubusercontent.com/68918326/182261659-bb6e2823-c1c9-4118-8db8-e060619fdf8a.PNG)
 
+
+<br>
+<h3 align="center">Rotas da API</h3>
+
+![rotas](https://user-images.githubusercontent.com/68918326/183220150-51adf540-de1e-4c26-b326-92ff736fab60.PNG)
+
+
 <br>
 <h3 align="center">Realizando inserção de dados (CREATE) com Postman - Método POST</h3>
 
@@ -56,6 +63,19 @@
 
 ![API RESTFUL - READ](https://user-images.githubusercontent.com/68918326/182366416-98018c4b-e479-468a-9dad-dfbb43b08005.gif)
 
+
+<br>
+<h3 align="center">Realizando a atualização de dados (UPDATE) com Postman - Método PATCH</h3>
+<h4 align="center">A aplicação tem uma verificação de registros alterados (matchedCount), se retornar 0, quer dizer que o dado não foi atualizado</h4>
+
+![UPDATE](https://user-images.githubusercontent.com/68918326/183219999-9fa25ca2-f7aa-45fc-a447-75e427a31f8f.gif)
+
+
+<br>
+<h3 align="center">Realizando a exclusão de dados (DELETE) com Postman - Método DELETE</h3>
+<h4 align="center">A aplicação primeira tem uma verificação se o dado existe antes de tentar deletar o dado</h4>
+
+![DELETE](https://user-images.githubusercontent.com/68918326/183219675-7d46236d-40bb-4f3f-9a3a-1668b72258b3.gif)
 
 
 <hr>

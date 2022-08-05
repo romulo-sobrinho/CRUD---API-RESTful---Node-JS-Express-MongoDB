@@ -73,6 +73,7 @@
 
 <br>
 <h3 align="center">Realizando a exclusão de dados (DELETE) com Postman - Método DELETE</h3>
+<h4 align="center">A aplicação primeira tem uma verificação se o dado existe antes de tentar deletar o dado</h4>
 
 ![DELETE](https://user-images.githubusercontent.com/68918326/183219675-7d46236d-40bb-4f3f-9a3a-1668b72258b3.gif)
 

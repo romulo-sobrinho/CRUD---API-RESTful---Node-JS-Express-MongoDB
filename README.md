@@ -68,16 +68,11 @@
 <h3 align="center">Realizando a atualização de dados (UPDATE) com Postman - Método PATCH</h3>
 <h4 align="center">A aplicação tem uma verificação de registros alterados (matchedCount), se retornar 0, quer dizer que o dado não foi atualizado</h4>
 
-
+![UPDATE](https://user-images.githubusercontent.com/68918326/183219999-9fa25ca2-f7aa-45fc-a447-75e427a31f8f.gif)
 
 
 <br>
 <h3 align="center">Realizando a exclusão de dados (DELETE) com Postman - Método DELETE</h3>
-<h4 align="center">A aplicação primeira tem uma verificação se o dado existe antes de tentar deletar o dado</h4>
-
-
-
-![UPDATE](https://user-images.githubusercontent.com/68918326/183219999-9fa25ca2-f7aa-45fc-a447-75e427a31f8f.gif)
 
 ![DELETE](https://user-images.githubusercontent.com/68918326/183219675-7d46236d-40bb-4f3f-9a3a-1668b72258b3.gif)
 

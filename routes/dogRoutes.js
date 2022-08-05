@@ -11,6 +11,8 @@ router.post("/", dogsControllers.addDog)
 
 router.patch("/:breed", dogsControllers.updateDog)
 
+router.delete("/:id", dogsControllers.deleteDog)
+
 module.exports = router
 
 
@@ -30,4 +32,3 @@ module.exports = router
 
 // router.put("/", bodyParser.json(), dogsControllers.updateDog)
 
-// router.delete("/", bodyParser.json(), dogsControllers.deleteDog)

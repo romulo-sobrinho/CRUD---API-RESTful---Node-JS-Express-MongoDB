@@ -67,7 +67,25 @@ const updateDog = async (req, res) => {
   }
 }
 
-module.exports = {showDogs, showSpecificDog, addDog, updateDog}
+const deleteDog = async (req, res) => {
+  let id = req.params.id
+
+  const dog = Dog.findOne({_id: id})
+
+  if (!dog) {
+    res.status(422).json({message: 'Dog não encontrado'})
+    return
+  } 
+
+  try{
+    await Dog.deleteOne({_id: id})
+    res.status(200).json({message: 'Registro do Dog deletado com sucesso!'})
+  }catch (error) {
+    res.status(500).json({message: 'Registro do Dog não deletado'})
+  }
+}
+
+module.exports = {showDogs, showSpecificDog, addDog, updateDog, deleteDog}
 
 
 
@@ -75,9 +93,3 @@ module.exports = {showDogs, showSpecificDog, addDog, updateDog}
 
 
 
-// const deleteDog = (req, res) => {
-//   let {id} = req.body
-//   dogs.deleteDog(id)
-//   console.log("Método DELETE funcionando")
-//   res.send("Doguinho deletado")
-// }

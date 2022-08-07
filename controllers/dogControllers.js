@@ -53,10 +53,10 @@ const addDog = async (req, res) => {
 }
 
 const updateDog = async (req, res) => {
-  const breed = req.params.breed
+  const id = req.params.id
   const {lifeExpectancy, weight, levelCute} = req.body
   try {
-    const updateDog = await Dog.updateOne({breed}, {lifeExpectancy, weight, levelCute})
+    const updateDog = await Dog.updateOne({_id: id}, {lifeExpectancy, weight, levelCute})
     if(updateDog.matchedCount === 0) {
       res.status(422).json({message: 'Dog não encontrado'})
       return

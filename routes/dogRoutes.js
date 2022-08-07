@@ -9,7 +9,7 @@ router.get("/:breed", dogsControllers.showSpecificDog)
 
 router.post("/", dogsControllers.addDog)
 
-router.patch("/:breed", dogsControllers.updateDog)
+router.patch("/:id", dogsControllers.updateDog)
 
 router.delete("/:id", dogsControllers.deleteDog)
 
